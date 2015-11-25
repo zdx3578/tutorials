@@ -58,7 +58,7 @@ elseif opt.loss == 'nll' then
 
 elseif opt.loss == 'mse' then
 
-   -- for MSE, we add a tanh, to restrict the model's output
+   -- for MSE(mean-square error), we add a tanh, to restrict the model's output
    model:add(nn.Tanh())
 
    -- The mean-square error is not recommended for classification
